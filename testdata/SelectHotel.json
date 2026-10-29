@@ -1,0 +1,35 @@
+{
+  "positiveSelectHotelData": [
+    {
+      "testName": "Select Hotel - Option 1",
+      "radioButton": 1,
+      "expected": {
+        "url": "BookHotel.php"
+      }
+    },
+    {
+      "testName": "Select Hotel - Option 2",
+      "radioButton": 2,
+      "expected": {
+        "url": "BookHotel.php"
+      }
+    },
+    {
+      "testName": "Select Hotel - Option 3",
+      "radioButton": 3,
+      "expected": {
+        "url": "BookHotel.php"
+      }
+    }
+  ],
+  "negativeSelectHotelData": [
+    {
+      "testName": "Continue without selecting a hotel",
+      "radioButton": null,
+      "expected": {
+        "url": "SelectHotel.php",
+        "message": "Please Select a Hotel"
+      }
+    }
+  ]
+}

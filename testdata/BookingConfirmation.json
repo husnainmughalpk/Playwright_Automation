@@ -1,0 +1,6 @@
+{
+  "expectedUrls": {
+    "bookedItinerary": "https://adactinhotelapp.com/BookedItinerary.php",
+    "logout": "https://adactinhotelapp.com/Logout.php"
+  }
+}

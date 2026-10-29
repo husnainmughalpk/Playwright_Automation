@@ -1,0 +1,15 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/allure-results/
+/allure-report/
+/.reporting-runner-results/
+/.env
+
+# Local API test settings
+/tests/api_Tests/.env

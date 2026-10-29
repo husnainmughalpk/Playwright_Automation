@@ -1,0 +1,151 @@
+{
+  "searchHotelData": [
+    {
+      "testName": "Search Hotel - Melbourne",
+      "location": "Melbourne",
+      "hotel": "Hotel Sunshine",
+      "roomType": "Deluxe",
+      "rooms": "2",
+      "checkInDate": "01/12/2026",
+      "checkOutDate": "05/12/2026",
+      "adults": "2",
+      "children": "1",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - Brisbane",
+      "location": "Brisbane",
+      "hotel": "Hotel Hervey",
+      "roomType": "Double",
+      "rooms": "1",
+      "checkInDate": "10/12/2026",
+      "checkOutDate": "15/12/2026",
+      "adults": "1",
+      "children": "0",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - London",
+      "location": "London",
+      "hotel": "Hotel Cornice",
+      "roomType": "Super Deluxe",
+      "rooms": "3",
+      "checkInDate": "20/12/2026",
+      "checkOutDate": "25/12/2026",
+      "adults": "3",
+      "children": "1",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - New York",
+      "location": "New York",
+      "hotel": "Hotel Creek",
+      "roomType": "Standard",
+      "rooms": "2",
+      "checkInDate": "10/01/2027",
+      "checkOutDate": "15/01/2027",
+      "adults": "2",
+      "children": "2",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - Melbourne single guest",
+      "location": "Melbourne",
+      "hotel": "Hotel Sunshine",
+      "roomType": "Deluxe",
+      "rooms": "1",
+      "checkInDate": "05/02/2027",
+      "checkOutDate": "08/02/2027",
+      "adults": "1",
+      "children": "0",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - London any hotel and room type",
+      "location": "London",
+      "hotel": "",
+      "roomType": "",
+      "rooms": "2",
+      "checkInDate": "12/03/2027",
+      "checkOutDate": "16/03/2027",
+      "adults": "2",
+      "children": "0",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    },
+    {
+      "testName": "Search Hotel - Brisbane family stay",
+      "location": "Brisbane",
+      "hotel": "Hotel Hervey",
+      "roomType": "Double",
+      "rooms": "2",
+      "checkInDate": "07/04/2027",
+      "checkOutDate": "12/04/2027",
+      "adults": "2",
+      "children": "2",
+      "expected": {
+        "url": "SelectHotel.php",
+        "hotelResultVisible": true
+      },
+      "url": "https://adactinhotelapp.com/SearchHotel.php"
+    }
+  ],
+  "negativeSearchData": [
+    {
+      "testName": "Search Hotel - Missing location",
+      "location": "",
+      "expected": {
+        "errorSelector": "#location_span",
+        "url": "SearchHotel.php"
+      }
+    },
+    {
+      "testName": "Search Hotel - Checkout before checkin",
+      "checkInDate": "15/05/2027",
+      "checkOutDate": "10/05/2027",
+      "expected": {
+        "url": "SearchHotel.php",
+        "errorMessage": "Check-Out Date shall be after than Check-In Date"
+      }
+    },
+    {
+      "testName": "Search Hotel - Missing room count",
+      "rooms": "",
+      "expected": {
+        "url": "SearchHotel.php",
+        "errorMessage": "Please Select Total Number of Rooms"
+      }
+    },
+    {
+      "testName": "Search Hotel - Missing adult count",
+      "adults": "",
+      "expected": {
+        "url": "SearchHotel.php",
+        "errorMessage": "Please Select Adults per Room"
+      }
+    }
+  ]
+}

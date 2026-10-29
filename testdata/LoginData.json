@@ -1,0 +1,72 @@
+{
+  "positiveLoginData": [
+    {
+      "username": "husnain12345",
+      "password": "243000",
+      "expectedMsg": "Welcome to Adactin Group of Hotels",
+      "testName": "Valid login - user 1",
+      "expected": {
+        "outcome": "success",
+        "url": "https://adactinhotelapp.com/SearchHotel.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    },
+    {
+      "username": "imranali",
+      "password": "imranali",
+      "expectedMsg": "Welcome to Adactin Group of Hotels",
+      "testName": "Valid login - user 2",
+      "expected": {
+        "outcome": "success",
+        "url": "https://adactinhotelapp.com/SearchHotel.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    }
+  ],
+  "negativeLoginData": [
+    {
+      "testName": "Missing username",
+      "username": "",
+      "password": "Example123!",
+      "expected": {
+        "outcome": "error",
+        "message": "Enter Username",
+        "url": "https://adactinhotelapp.com/index.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    },
+    {
+      "testName": "Missing password",
+      "username": "invalid_automation_user",
+      "password": "",
+      "expected": {
+        "outcome": "error",
+        "message": "Enter Password",
+        "url": "https://adactinhotelapp.com/index.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    },
+    {
+      "testName": "Both credentials empty",
+      "username": "",
+      "password": "",
+      "expected": {
+        "outcome": "error",
+        "message": "Enter Username",
+        "url": "https://adactinhotelapp.com/index.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    },
+    {
+      "testName": "Invalid credentials",
+      "username": "invalid_automation_user",
+      "password": "Wrong123!",
+      "expected": {
+        "outcome": "error",
+        "message": "Invalid Login details or Your Password might have expired.",
+        "url": "https://adactinhotelapp.com/index.php"
+      },
+      "url": "https://adactinhotelapp.com/index.php"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+	"mcpServers": {
+		"my-mcp-server-dc2f7c77": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@playwright/mcp@latest"
+			]
+		}
+	}
+}

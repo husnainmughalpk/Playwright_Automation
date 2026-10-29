@@ -1,0 +1,75 @@
+{
+  "bookHotelData": [
+    {
+      "testName": "Book Hotel - Guest One",
+      "firstName": "Test",
+      "lastName": "Guest",
+      "address": "123 Main Street, Lahore",
+      "cardNumber": "4111111111111111",
+      "cardType": "VISA",
+      "expiryMonth": "December",
+      "expiryYear": "2028",
+      "cvv": "123",
+      "expected": {
+        "url": "https://adactinhotelapp.com/BookingConfirm.php"
+      }
+    },
+    {
+      "testName": "Book Hotel - Guest Two",
+      "firstName": "Ali",
+      "lastName": "Ahmed",
+      "address": "456 Main Road, Karachi",
+      "cardNumber": "4111111111111111",
+      "cardType": "VISA",
+      "expiryMonth": "November",
+      "expiryYear": "2029",
+      "cvv": "456",
+      "expected": {
+        "url": "https://adactinhotelapp.com/BookingConfirm.php"
+      }
+    },
+    {
+      "testName": "Book Hotel - Guest Three",
+      "firstName": "Sara",
+      "lastName": "Khan",
+      "address": "789 Model Town, Lahore",
+      "cardNumber": "4111111111111111",
+      "cardType": "VISA",
+      "expiryMonth": "October",
+      "expiryYear": "2030",
+      "cvv": "789",
+      "expected": {
+        "url": "https://adactinhotelapp.com/BookingConfirm.php"
+      }
+    }
+  ],
+  "negativeBookData": [
+    {
+      "testName": "Book Hotel - Missing first name",
+      "field": "firstName",
+      "value": "",
+      "expected": {
+        "errorSelector": "#first_name_span",
+        "url": "BookHotel.php"
+      }
+    },
+    {
+      "testName": "Book Hotel - Missing card number",
+      "field": "cardNumber",
+      "value": "",
+      "expected": {
+        "errorSelector": "#cc_num_span",
+        "url": "BookHotel.php"
+      }
+    },
+    {
+      "testName": "Book Hotel - Missing CVV",
+      "field": "cvv",
+      "value": "",
+      "expected": {
+        "errorSelector": "#cc_cvv_span",
+        "url": "BookHotel.php"
+      }
+    }
+  ]
+}
