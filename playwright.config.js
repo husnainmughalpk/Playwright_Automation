@@ -18,8 +18,8 @@ if (existsSync(apiEnvPath)) process.loadEnvFile(apiEnvPath);
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
-  globalSetup: './reporting/setup.js',
-  globalTeardown: './reporting/teardown.js',
+  // globalSetup: './reporting/setup.js',
+  // globalTeardown: './reporting/teardown.js',
   timeout: 60000,
   testDir: './tests',
   /* Run each file's tests in order; different files can still run in parallel. */
@@ -38,9 +38,9 @@ reporter: [
     outputFolder: 'playwright-report',
     open: 'never'
   }],
-  ['allure-playwright', {
-    resultsDir: 'allure-results'
-  }],
+  // ['allure-playwright', {
+  //   resultsDir: 'allure-results'
+  // }],
 ],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
