@@ -1,4 +1,4 @@
-import { test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
+import { authenticatedTest as test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
 
 import SearchHotel from '../Pages/SearchHotel';
 import SelectHotel from '../Pages/SelectHotel';
@@ -8,7 +8,7 @@ import searchHotelData from '../testdata/SearchHotel.json';
 import selectHotelData from '../testdata/SelectHotel.json';
 import bookHotelDataJson from '../testdata/BookHotel.json';
 
-setupTestHooks();
+setupTestHooks(test);
 
 test.describe('Positive Book Hotel Scenarios', () => {
 

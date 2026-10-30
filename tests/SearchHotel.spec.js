@@ -1,6 +1,6 @@
-import { test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
+import { authenticatedTest as test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
 
-setupTestHooks();
+setupTestHooks(test);
 import SearchHotel from '../Pages/SearchHotel';
 import searchHotelData from '../testdata/SearchHotel.json';
 

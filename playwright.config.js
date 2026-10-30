@@ -79,7 +79,6 @@ reporter: [
       dependencies: ['setup'],
       use: {
         ...devices['Desktop Chrome'],
-        storageState: 'playwright/.auth/user.json',
       },
     },
 
@@ -89,7 +88,6 @@ reporter: [
       dependencies: ['setup'],
       use: {
         ...devices['Desktop Firefox'],
-        storageState: 'playwright/.auth/user.json',
       },
     },
 
@@ -102,7 +100,6 @@ reporter: [
         ...devices['Desktop Safari'],
         // This demo site's certificate is rejected by WebKit on Windows.
         ignoreHTTPSErrors: true,
-        storageState: 'playwright/.auth/user.json',
       },
     },
 

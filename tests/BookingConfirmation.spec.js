@@ -1,4 +1,4 @@
-import { test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
+import { authenticatedTest as test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
 import SearchHotel from '../Pages/SearchHotel.js';
 import SelectHotel from '../Pages/SelectHotel.js';
 import BookHotel from '../Pages/BookHotel.js';
@@ -9,7 +9,7 @@ import searchHotelData from '../testdata/SearchHotel.json';
 import bookHotelData from '../testdata/BookHotel.json';
 import confirmationData from '../testdata/BookingConfirmation.json';
 
-setupTestHooks();
+setupTestHooks(test);
 
 test('Booking confirmation navigation - itinerary, search hotel and logout', async ({ page }) => {
   test.setTimeout(180000);

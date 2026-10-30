@@ -1,9 +1,9 @@
-import { test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
+import { authenticatedTest as test, expect, setupTestHooks } from '../Fixtures/TestSetup.js';
 import Logout from '../Pages/Logout.js';
 import loginData from '../testdata/LoginData.json';
 import confirmationData from '../testdata/BookingConfirmation.json';
 
-setupTestHooks();
+setupTestHooks(test);
 
 test('Logout - authenticated user returns to logout page', async ({ page }) => {
   const logout = new Logout(page);
