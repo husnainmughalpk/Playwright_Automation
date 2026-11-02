@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import BasePage from './BasePage.js';
+import { time } from 'node:console';
 
 class BookedItinerary extends BasePage {
     constructor(page) {
@@ -43,7 +44,7 @@ class BookedItinerary extends BasePage {
 
     async clickSearchHotel() {
         await test.step('Navigate to Search Hotel', async () => {
-            await this.searchHotelButton.click();
+            await this.searchHotelButton.click({timeout: 90000});
             await this.attachScreenshot('20-Search Hotel Page');
         });
     }

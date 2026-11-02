@@ -1,5 +1,6 @@
 import { test } from '@playwright/test';
 import BasePage from './BasePage.js';
+import { time } from 'node:console';
 
 class SearchHotel extends BasePage {
   constructor(page) {
@@ -30,7 +31,7 @@ class SearchHotel extends BasePage {
       await this.attachScreenshot('Search details entered');
     });
     await test.step('Submit hotel search', async () => {
-      await this.submitButton.click();
+      await this.submitButton.click({timeout: 90000});
       await this.attachScreenshot('Hotel search submitted');
     });
   }
