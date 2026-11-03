@@ -34,9 +34,9 @@ export default defineConfig({
             outputFolder: 'playwright-report',
             open: 'never',
         }],
-        // ['allure-playwright', {
-        //     resultsDir: 'allure-results',
-        // }],
+        ['allure-playwright', {
+            resultsDir: 'allure-results',
+        }],
     ],
 
     use: {
