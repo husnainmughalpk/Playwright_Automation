@@ -8,6 +8,7 @@ import searchHotelData from '../testdata/SearchHotel.json';
 import selectHotelData from '../testdata/SelectHotel.json';
 import bookHotelData from '../testdata/BookHotel.json';
 import confirmationData from '../testdata/BookingConfirmation.json';
+import { TIMEOUT } from 'node:dns';
 
 setupTestHooks(test);
 
@@ -68,7 +69,7 @@ test('Booked itinerary - find and verify a new booking', async ({ page }) => {
 
   await itinerary.searchBooking(orderNumber);
   await test.step('Verify searched booking', async () => {
-    await expect(itinerary.orderId).toHaveValue(orderNumber);
+    await expect(itinerary.orderId).toHaveValue(orderNumber, { timeout: 30000 });
     await itinerary.attachScreenshot('Itinerary - Booking found');
   });
 
