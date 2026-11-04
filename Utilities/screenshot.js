@@ -9,7 +9,7 @@ async function captureScreenshot(page, testInfo, name) {
         }
 
         const screenshot = await page.screenshot({
-            timeout: 15000,
+            timeout: 50000,
             animations: 'disabled',
             caret: 'hide',
         });
