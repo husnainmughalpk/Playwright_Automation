@@ -13,3 +13,6 @@ node_modules/
 
 # Local API test settings
 /tests/api_Tests/.env
+
+# Playwright MCP logs and snapshots
+/.playwright-mcp/
