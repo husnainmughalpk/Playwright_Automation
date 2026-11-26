@@ -25,6 +25,21 @@
 			"headers": {
 				"Authorization": "Bearer ${POSTMAN_API_KEY}"
 			}
+		},
+		"jenkins": {
+			"type": "http",
+			"url": "http://localhost:8080/mcp-server/mcp",
+			"headers": {
+				"Authorization": "Basic ${JENKINS_BASIC_AUTH}"
+			}
+		},
+		"docker": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"mcp-docker-server"
+			]
 		}
 	}
 }
