@@ -1,0 +1,2 @@
+[    2274ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://adactinhotelapp.com/HotelAppBuild2/:1
+[    3738ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ https://adactinhotelapp.com/favicon.ico:1

@@ -1,0 +1,93 @@
+- generic [active] [ref=e1]:
+  - table [ref=e2]:
+    - rowgroup [ref=e3]:
+      - row [ref=e4]:
+        - cell [ref=e5]:
+          - img "Adactin Group" [ref=e6]
+        - cell [ref=e7]:
+          - 'img "Adactin Group: Hotel Reservation System" [ref=e8]'
+      - row [ref=e9]:
+        - cell [ref=e10]
+  - table [ref=e11]:
+    - rowgroup [ref=e12]:
+      - row [ref=e13]:
+        - cell [ref=e14]:
+          - paragraph [ref=e15]: Welcome to Adactin Group of Hotels
+          - table [ref=e16]:
+            - rowgroup [ref=e17]:
+              - row [ref=e18]:
+                - cell [ref=e19]:
+                  - img "Hotel Image 3" [ref=e20]
+                - cell [ref=e21]:
+                  - img "Hotel Image 1" [ref=e22]
+              - row [ref=e23]:
+                - cell [ref=e24]:
+                  - img "Hotel Image 2" [ref=e25]
+              - row [ref=e26]:
+                - cell [ref=e27]:
+                  - img "Hotel Image 4" [ref=e28]
+          - paragraph [ref=e29]
+          - paragraph [ref=e30]
+          - paragraph [ref=e31]
+          - paragraph [ref=e32]
+        - cell [ref=e33]:
+          - table [ref=e35]:
+            - rowgroup [ref=e36]:
+              - row [ref=e37]:
+                - cell "Existing User Login - Build 2" [ref=e38]
+              - row [ref=e39]:
+                - cell "Username" [ref=e40]
+                - cell [ref=e41]:
+                  - textbox [ref=e42]
+              - row [ref=e43]:
+                - cell "Password" [ref=e44]
+                - cell [ref=e45]:
+                  - textbox [ref=e46]
+              - row [ref=e47]:
+                - cell [ref=e48]
+                - cell [ref=e49]:
+                  - link "Forgot Password?" [ref=e51] [cursor=pointer]:
+                    - /url: ForgotPassword.php
+              - row [ref=e52]:
+                - cell [ref=e53]
+                - cell [ref=e54]
+              - row [ref=e55]:
+                - cell [ref=e56]
+                - cell [ref=e57]:
+                  - button "Login" [ref=e58]
+              - row [ref=e59]:
+                - cell [ref=e60]:
+                  - link "New User Register Here" [ref=e61] [cursor=pointer]:
+                    - /url: Register.php
+          - table [ref=e62]:
+            - rowgroup [ref=e63]:
+              - row [ref=e64]:
+                - cell "Important Note:" [ref=e65]
+              - row [ref=e66]:
+                - cell [ref=e67]:
+                  - text: "Hotel Application has 2 builds:"
+                  - list [ref=e68]:
+                    - listitem [ref=e69]:
+                      - strong [ref=e70]: Build 1
+                      - text: � Has been developed with known defects. Thus, functional test cases and automation scripts will fail on this build.
+                      - link [ref=e71] [cursor=pointer]:
+                        - /url: ../
+                        - strong [ref=e72]: Go to Build 1
+                    - listitem [ref=e73]:
+                      - strong [ref=e74]: Build 2
+                      - text: � Known defects have been fixed. Thus, functional test cases and automation test scripts should pass when executed on this build.
+              - row [ref=e75]:
+                - cell [ref=e76]:
+                  - text: "For any queries/issues please email:"
+                  - link "info@adactin.com" [ref=e77] [cursor=pointer]:
+                    - /url: mailto:info@adactin.com
+  - table [ref=e78]:
+    - rowgroup [ref=e79]:
+      - row [ref=e80]:
+        - cell [ref=e81]
+      - row [ref=e82]:
+        - cell [ref=e83]:
+          - text: © 2026 -
+          - link "Adactin.com" [ref=e84] [cursor=pointer]:
+            - /url: http://www.adactin.com
+          - text: . All Rights Reserved. Adactin Group Pty. Ltd.
